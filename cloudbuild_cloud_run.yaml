@@ -37,10 +37,10 @@ options:
   substitutionOption: ALLOW_LOOSE
 substitutions:
   _DOCKERFILE_DIR: src/main/docker/
-  _CLOUD_RUN_SERVICE: run-1
+  _CLOUD_RUN_SERVICE: movie-api
   _K8S_NAMESPACE: default
   _K8S_LABELS: ''
-  _GKE_LOCATION: us-central1
+  _GKE_LOCATION: europe-west4
   _DOCKERFILE_NAME: Dockerfile.jvm
   _GKE_CLUSTER: cluster-1
   _IMAGE_NAME: gcr.io/luna-tech-nonprod/yts/movies-api
