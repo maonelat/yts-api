@@ -1,0 +1,73 @@
+{
+  "status": "ok",
+  "status_message": "Query was successful",
+  "data": {
+    "movie_count": 47378,
+    "limit": 1,
+    "page_number": 50,
+    "movies": [
+      {
+        "id": 47979,
+        "url": "https://yts.mx/movies/tick-tick-tick-1970",
+        "imdb_code": "tt0065360",
+        "title": "Tick, Tick, Tick",
+        "title_english": "Tick, Tick, Tick",
+        "title_long": "Tick, Tick, Tick (1970)",
+        "slug": "tick-tick-tick-1970",
+        "year": 1970,
+        "rating": 6.6,
+        "runtime": 100,
+        "genres": [
+          "Action",
+          "Drama"
+        ],
+        "summary": "This is the story of a black man who has been elected sheriff in a U.S. southern county, due to the vote of blacks. He receives a huge amount of hostility from the non-tolerant white establishment, making his job very hard. The white former sheriff has his own struggle, as he balances his devotion to the law with his family and community relations. Things come to a head when the black sheriff puts a white man, the son of a wealthy land-owner of a neighboring county, in jail, and his daddy comes after him. Everyone around has to decide where their values really lie.",
+        "description_full": "This is the story of a black man who has been elected sheriff in a U.S. southern county, due to the vote of blacks. He receives a huge amount of hostility from the non-tolerant white establishment, making his job very hard. The white former sheriff has his own struggle, as he balances his devotion to the law with his family and community relations. Things come to a head when the black sheriff puts a white man, the son of a wealthy land-owner of a neighboring county, in jail, and his daddy comes after him. Everyone around has to decide where their values really lie.",
+        "synopsis": "This is the story of a black man who has been elected sheriff in a U.S. southern county, due to the vote of blacks. He receives a huge amount of hostility from the non-tolerant white establishment, making his job very hard. The white former sheriff has his own struggle, as he balances his devotion to the law with his family and community relations. Things come to a head when the black sheriff puts a white man, the son of a wealthy land-owner of a neighboring county, in jail, and his daddy comes after him. Everyone around has to decide where their values really lie.",
+        "yt_trailer_code": "GwArCCZZq8I",
+        "language": "en",
+        "mpa_rating": "",
+        "background_image": "https://yts.mx/assets/images/movies/tick_tick_tick_1970/background.jpg",
+        "background_image_original": "https://yts.mx/assets/images/movies/tick_tick_tick_1970/background.jpg",
+        "small_cover_image": "https://yts.mx/assets/images/movies/tick_tick_tick_1970/small-cover.jpg",
+        "medium_cover_image": "https://yts.mx/assets/images/movies/tick_tick_tick_1970/medium-cover.jpg",
+        "large_cover_image": "https://yts.mx/assets/images/movies/tick_tick_tick_1970/large-cover.jpg",
+        "state": "ok",
+        "torrents": [
+          {
+            "url": "https://yts.mx/torrent/download/61F8D82DF84152921FEFD0E1EB0A4281BE0E0F9F",
+            "hash": "61F8D82DF84152921FEFD0E1EB0A4281BE0E0F9F",
+            "quality": "720p",
+            "type": "web",
+            "seeds": 27,
+            "peers": 5,
+            "size": "888.9 MB",
+            "size_bytes": 932079206,
+            "date_uploaded": "2023-01-03 18:54:08",
+            "date_uploaded_unix": 1672768448
+          },
+          {
+            "url": "https://yts.mx/torrent/download/580E07C430C45BF06DD28F74AE089D7552BEE049",
+            "hash": "580E07C430C45BF06DD28F74AE089D7552BEE049",
+            "quality": "1080p",
+            "type": "web",
+            "seeds": 56,
+            "peers": 10,
+            "size": "1.61 GB",
+            "size_bytes": 2147483648,
+            "date_uploaded": "2023-01-03 19:52:13",
+            "date_uploaded_unix": 1672771933
+          }
+        ],
+        "date_uploaded": "2023-01-03 18:54:08",
+        "date_uploaded_unix": 1672768448
+      }
+    ]
+  },
+  "@meta": {
+    "server_time": 1673011638,
+    "server_timezone": "CET",
+    "api_version": 2,
+    "execution_time": "0 ms"
+  }
+}

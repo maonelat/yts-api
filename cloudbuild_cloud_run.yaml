@@ -1,0 +1,49 @@
+steps:
+  - name: maven:3.6.0-jdk-11-slim
+    args: ['clean', 'package', '-DskipTests']
+    entrypoint: 'mvn'
+    id: Maven Build
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - build
+      - '-t'
+      - '$_IMAGE_NAME:latest'
+      - '.'
+      - '-f'
+      - '$_DOCKERFILE_DIR$_DOCKERFILE_NAME'
+      - '--build-arg=TARGET_DIR=target/'
+    id: Build
+  - name: gcr.io/cloud-builders/docker
+    args:
+      - push
+      - '$_IMAGE_NAME:latest'
+    id: Push
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+      - 'run'
+      - 'deploy'
+      - '$_CLOUD_RUN_SERVICE'
+      - '--image'
+      - '$_IMAGE_NAME:latest'
+      - '--region'
+      - '$_GKE_LOCATION'
+      - '--platform'
+      - 'managed'
+      - '--allow-unauthenticated'
+    id: Cloud Run deploy
+images:
+  - '$_IMAGE_NAME:latest'
+options:
+  substitutionOption: ALLOW_LOOSE
+substitutions:
+  _DOCKERFILE_DIR: src/main/docker/
+  _CLOUD_RUN_SERVICE: run-1
+  _K8S_NAMESPACE: default
+  _K8S_LABELS: ''
+  _GKE_LOCATION: us-central1
+  _DOCKERFILE_NAME: Dockerfile.jvm
+  _GKE_CLUSTER: cluster-1
+  _IMAGE_NAME: gcr.io/luna-tech-nonprod/yts/movies-api
+tags:
+  - gcp-cloud-build-deploy
+  - $_K8S_APP_NAME
