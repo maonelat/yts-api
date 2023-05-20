@@ -21,6 +21,7 @@ public class APIResource {
 
     @Inject
     private MoviesService moviesService;
+    
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
